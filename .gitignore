@@ -11,6 +11,7 @@
 .pydevproject
 .tox
 .vimrc
+/.pytest_cache
 /.cache
 /.ropeproject
 /libs
@@ -31,3 +32,4 @@ pip-log.txt
 plugins
 sdist
 var
+*.sw?

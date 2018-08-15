@@ -56,7 +56,7 @@ Code audit tool for Python and JavaScript. Pylama wraps these tools:
 
 .. _documentation:
 
-Docs are available at https://pylava.readthedocs.org/. Pull requests with documentation enhancements and/or fixes are awesome and most welcome.
+Docs are available at https://pylavadocs.readthedocs.io/. Pull requests with documentation enhancements and/or fixes are awesome and most welcome.
 
 
 .. _contents:
