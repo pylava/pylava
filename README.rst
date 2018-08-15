@@ -37,21 +37,21 @@ Code audit tool for Python and JavaScript. Pylama wraps these tools:
 
 .. _badges:
 
-.. image:: http://img.shields.io/travis/klen/pylama.svg?style=flat-square
-    :target: http://travis-ci.org/klen/pylama
+.. image:: https://travis-ci.com/pyfocus/pylava.svg?branch=master
+    :target: https://travis-ci.com/pyfocus/pylava
     :alt: Build Status
 
-.. image:: http://img.shields.io/coveralls/klen/pylama.svg?style=flat-square
-    :target: https://coveralls.io/r/klen/pylama
-    :alt: Coverals
+.. image:: https://coveralls.io/repos/github/pyfocus/pylava/badge.svg?branch=master
+    :target: https://coveralls.io/github/pyfocus/pylava?branch=master
+    :alt: Coveralls
 
-.. image:: http://img.shields.io/pypi/v/pylama.svg?style=flat-square
-    :target: https://crate.io/packages/pylama
-    :alt: Version
+.. image:: https://img.shields.io/pypi/v/pylava.svg
+    :target: https://pypi.org/project/pylava/
+    :alt: PyPI
 
-.. image:: http://img.shields.io/gratipay/klen.svg?style=flat-square
-    :target: https://www.gratipay.com/klen/
-    :alt: Donate
+.. image:: https://readthedocs.org/projects/pylavadocs/badge/?version=latest
+    :target: https://pylavadocs.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
 
 .. _documentation:
