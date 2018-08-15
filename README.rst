@@ -1,5 +1,27 @@
-|logo| Pylama
-#############
+Pylava
+######
+Pylava is intended to be a community maintained fork of
+`Pylama <https://github.com/klen/pylama>`_.
+
+Pylama does not work with Python 3.7 due to `this issue
+<https://github.com/klen/pylama/issues/123>`_. While there is a pull
+request to resolve the issue, it is not being merged into the project
+due to lack of maintenance. This fork named Pylava is meant for merging
+useful pull requests into the project, so that the project can satsify
+the current needs of Python developers.
+
+The README content below is mostly the original content from the README
+of Pylama. Thus many links in the README may refer to resources of the
+Pylama project. They will be updated to refer to resources of Pylava
+gradually as time permits. However it isn't a major problem because
+Pylava is meant to be a drop-in replacement for Pylama.
+
+While the original Pylama project uses the ``develop`` branch as the
+active development branch, this fork uses the ``master`` branch as the
+active development branch.
+
+**Credit:** Thanks to `Kirill Klenvo <https://github.com/klen>`_ for
+writing the original Pylama project.
 
 .. _description:
 
