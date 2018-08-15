@@ -12,7 +12,7 @@
         :end-before: .. _badges:
 
     :copyright: 2013 by Kirill Klenov.
-    :license: BSD, see LICENSE for more details.
+    :license: MIT, see LICENSE.rst for more details.
 """
 from __future__ import unicode_literals, print_function
 
@@ -20,7 +20,7 @@ from __future__ import unicode_literals, print_function
 __version__ = "0.8.0"
 __project__ = "Inirama"
 __author__ = "Kirill Klenov <horneds@gmail.com>"
-__license__ = "BSD"
+__license__ = "MIT"
 
 
 import io

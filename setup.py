@@ -50,7 +50,7 @@ meta = dict(
         'Environment :: Console',
         'Intended Audience :: Developers',
         'Intended Audience :: System Administrators',
-        'License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)',
+        'License :: OSI Approved :: MIT License',
         'Natural Language :: English',
         'Natural Language :: Russian',
         'Programming Language :: Python :: 2',

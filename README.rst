@@ -388,14 +388,13 @@ See AUTHORS_.
 
 License
 -------
-
-Licensed under a `BSD license`_.
+Licensed under the `MIT License`_.
 
 
 .. _links:
 
 .. _AUTHORS: https://github.com/pyfocus/pylava/blob/develop/AUTHORS
-.. _BSD license: http://www.linfo.org/bsdlicense.html
+.. _MIT license: https://github.com/pyfocus/pylava/blob/master/LICENSE.rst
 .. _Mccabe: http://nedbatchelder.com/blog/200803/python_code_complexity_microtool.html
 .. _pydocstyle: https://github.com/PyCQA/pydocstyle/
 .. _pycodestyle: https://github.com/PyCQA/pycodestyle

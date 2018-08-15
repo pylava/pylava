@@ -14,6 +14,7 @@ help:
 # target: clean - Clean repo
 clean:
 	@rm -rf build dist docs/_build *.egg
+	@rm -rf .tox pylava.egg-info 
 	@find . -name "*.pyc" -delete
 	@find . -name "*.orig" -delete
 	@rm -rf $(CURDIR)/libs
