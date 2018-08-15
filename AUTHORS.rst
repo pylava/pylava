@@ -1,18 +1,21 @@
-Pylava Maintainer:
-
+Pylava Maintainer
+=================
 * Susam Pal (https://github.com/susam)
 
-Pylava Contributors:
 
+Pylava Contributors
+===================
 * Max Nordlund (https://github.com/maxnordlund)
 * Michael Käufl (https://github.com/michael-k)
 
-Pylama Maintainer:
 
+Pylama Maintainer
+=================
 * Kirill Klenov <horneds@gmail.com>
 
-Pylama Contributors:
 
+Pylama Contributors
+===================
 * Ankur Dedania (https://github.com/AbsoluteMSTR)
 * Daniel Hahler (https://github.com/blueyed)
 * Daniel O'onnell' (https://github.com/mruwnik)

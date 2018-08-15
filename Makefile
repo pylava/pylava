@@ -30,7 +30,7 @@ release:
 	@pip install bumpversion
 	@bumpversion $(VERSION)
 	@git checkout master
-	@git push --all
+	@git push
 	@git push --tags
 
 .PHONY: minor
@@ -52,12 +52,15 @@ register:
 .PHONY: upload
 # target: upload - Upload module on PyPi
 upload: clean
-	@git push --all
-	@git push --tags
 	@pip install twine wheel
 	@python setup.py sdist bdist_wheel
-	@twine upload dist/*.tar.gz || true
-	@twine upload dist/*.whl || true
+	@twine upload dist/* || true
+
+.PHONY: test-upload
+test-upload: clean
+	@pip install twine wheel
+	@python setup.py sdist bdist_wheel
+	@twine upload --repository-url https://test.pypi.org/legacy/ dist/* || true
 
 # =============
 #  Development

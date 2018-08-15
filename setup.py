@@ -30,8 +30,8 @@ meta = dict(
     platforms=('Any'),
     zip_safe=False,
     keywords='pylint pep8 pycodestyle pyflakes mccabe linter qa pep257 pydocstyle'.split(),
-
-    author='Pyfocus community',
+    maintainer='Susam Pal',
+    maintainer_email='susam@susam.in',
     url=' https://github.com/pyfocus/pylava',
 
     packages=find_packages(exclude=['plugins']),

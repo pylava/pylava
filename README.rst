@@ -1,41 +1,7 @@
 Pylava
-######
+======
 Pylava is intended to be a community maintained fork of
 `Pylama <https://github.com/klen/pylama>`_.
-
-Pylama does not work with Python 3.7 due to `this issue
-<https://github.com/klen/pylama/issues/123>`_. While there is a pull
-request to resolve the issue, it is not being merged into the project
-due to lack of maintenance. This fork named Pylava is meant for merging
-useful pull requests into the project, so that the project can satsify
-the current needs of Python developers.
-
-The README content below is mostly the original content from the README
-of Pylama. Thus many links in the README may refer to resources of the
-Pylama project. They will be updated to refer to resources of Pylava
-gradually as time permits. However it isn't a major problem because
-Pylava is meant to be a drop-in replacement for Pylama.
-
-While the original Pylama project uses the ``develop`` branch as the
-active development branch, this fork uses the ``master`` branch as the
-active development branch.
-
-**Credit:** Thanks to `Kirill Klenvo <https://github.com/klen>`_ for
-writing the original Pylama project.
-
-.. _description:
-
-Code audit tool for Python and JavaScript. Pylama wraps these tools:
-
-* pycodestyle_ (formerly pep8) © 2012-2013, Florent Xicluna;
-* pydocstyle_ (formerly pep257 by Vladimir Keleshev) © 2014, Amir Rachum;
-* PyFlakes_ © 2005-2013, Kevin Watters;
-* Mccabe_ © Ned Batchelder;
-* Pylint_ © 2013, Logilab (should be installed 'pylama_pylint' module);
-* Radon_ © Michele Lacchia
-* gjslint_ © The Closure Linter Authors (should be installed 'pylama_gjslint' module);
-
-.. _badges:
 
 .. image:: https://travis-ci.com/pyfocus/pylava.svg?branch=master
     :target: https://travis-ci.com/pyfocus/pylava
@@ -47,56 +13,124 @@ Code audit tool for Python and JavaScript. Pylama wraps these tools:
 
 .. image:: https://img.shields.io/pypi/v/pylava.svg
     :target: https://pypi.org/project/pylava/
-    :alt: PyPI
+    :alt: Version
 
 .. image:: https://readthedocs.org/projects/pylavadocs/badge/?version=latest
     :target: https://pylavadocs.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
+Pylava is a code audit tool for Python and JavaScript. Pylava wraps
+these tools:
 
-.. _documentation:
+* pycodestyle_ (formerly pep8) © 2012-2013, Florent Xicluna;
+* pydocstyle_ (formerly pep257 by Vladimir Keleshev) © 2014, Amir Rachum;
+* PyFlakes_ © 2005-2013, Kevin Watters;
+* Mccabe_ © Ned Batchelder;
+* Pylint_ © 2013, Logilab (should be installed 'pylama_pylint' module);
+* Radon_ © Michele Lacchia
+* gjslint_ © The Closure Linter Authors (should be installed 'pylama_gjslint' module);
 
-Docs are available at https://pylavadocs.readthedocs.io/. Pull requests with documentation enhancements and/or fixes are awesome and most welcome.
+.. _pycodestyle: https://github.com/PyCQA/pycodestyle
+.. _pydocstyle: https://github.com/PyCQA/pydocstyle/
+.. _PyFlakes: https://github.com/pyflakes/pyflakes
+.. _Mccabe: http://nedbatchelder.com/blog/200803/python_code_complexity_microtool.html
+.. _Pylint: http://pylint.org
+.. _Radon: https://github.com/rubik/radon
+.. _gjslint: https://developers.google.com/closure/utilities
 
 
 .. _contents:
 
-.. contents::
 
-.. _requirements:
+Credits
+-------
+Thanks to:
 
-Requirements:
-=============
-
-- Python (2.7, 3.2, 3.3)
-- To use JavaScript checker (``gjslint``) you need to install ``python-gflags`` with ``pip install python-gflags``.
-- If your tests are failing on Win platform you are missing: ``curses`` - http://www.lfd.uci.edu/~gohlke/pythonlibs/
-  (The curses library supplies a terminal-independent screen-painting and keyboard-handling facility for text-based terminals)
+- `Kirill Klenvo <https://github.com/klen>`_ for creating and
+  maintaining the original Pylama project. This fork named Pylava is a
+  derivative work based on Kirill Klenvo's Pylama project.
+- Contributors who have sent pull requests to Pylama.
 
 
-.. _installation:
+New in Pylava
+-------------
+This fork of Pylama differs from the original Pylama project in the
+following areas:
 
-Installation:
-=============
-**Pylama** could be installed using pip: ::
-::
+- Pylama does not work with Python 3.7 due to `Pylama issue #123
+  <https://github.com/klen/pylama/issues/123>`_. While there is a pull
+  request to resolve the issue, they are not being merged into the
+  project due to lack of maintenance. This fork named Pylava is meant
+  for merging useful pull requests into the project, so that the project
+  can satsify the current needs of Python developers. This is the
+  primary reason why this fork was created.
+
+- The licensing terms of Pylama are unclear. The README of the original
+  Pylama project mentioned:
+
+    Licensed under a `BSD license`_.
+
+  However there are references to other GNU Lesser General Public
+  License (GNU LGPL) in the project that have not been removed. For more
+  about this issue, see `Pylama issue #64
+  <https://github.com/klen/pylama/issues/64>`_.
+
+  This fork interprets the license section of the README to mean that
+  the Pylama project is available under a BSD license in addition to
+  certain files being available under GNU LGPL due to the mentions of
+  GNU LGPL in such files that have not been removed.
+
+  Further, this fork named Pylava (a derivative work based on Pylama) is
+  distributed under the terms of the MIT license which is allowed by BSD
+  licenses.
+
+- While the original Pylama project uses the ``develop`` branch as the
+  active development branch, this fork uses the ``master`` branch as the
+  active development branch.
+
+.. _BSD license: http://www.linfo.org/bsdlicense.html
+
+
+Documentation
+-------------
+Documentation is available at https://pylavadocs.readthedocs.io/. Pull
+requests with documentation enhancements and/or fixes are awesome and
+most welcome.
+
+
+Requirements
+------------
+- Python (2.7, 3.4, 3.5, 3.6, or 3.7)
+- To use JavaScript checker (``gjslint``) you need to install
+  ``python-gflags`` with ``pip install python-gflags``.
+- If your tests are failing on Win platform you are missing:
+  ``curses`` - http://www.lfd.uci.edu/~gohlke/pythonlibs/
+  (The curses library supplies a terminal-independent screen-painting
+  and keyboard-handling facility for text-based terminals)
+
+
+Installation
+------------
+Enter the following command to install Pylava. ::
 
     $ pip install pylava
 
+With Python 3, you may need to enter the following command instead. ::
 
-.. _quickstart:
+    $ pip3 install pylava
 
-Quickstart
-==========
 
-**Pylama** is easy to use and really fun for checking code quality.
-Just run `pylava` and get common output from all pylava plugins (pycodestyle_, PyFlakes_ and etc)
+Quick Start
+-----------
+Pylava is easy to use and really fun for checking code quality. Just run
+`pylava` and get common output from all pylava plugins (pycodestyle_,
+PyFlakes_ and etc)
 
-Recursive check the current directory. ::
+Recursively check the current directory. ::
 
     $ pylava
 
-Recursive check a path. ::
+Recursively check a path. ::
 
     $ pylava <path_to_directory_or_file>
 
@@ -104,7 +138,8 @@ Ignore errors ::
 
     $ pylava -i W,E501
 
-.. note:: You could choose a group erros `D`,`E1` and etc or special errors `C0312`
+Note: You could choose a group of errors ``D``,``E1``, etc., or special
+errors ``C0312``.
 
 Choose code checkers ::
 
@@ -116,12 +151,11 @@ Choose code checkers for JavaScript::
 
 .. _options:
 
-Set Pylama (checkers) options
-=============================
 
+Set Pylava (checkers) options
+-----------------------------
 Command line options
---------------------
-
+~~~~~~~~~~~~~~~~~~~~
 ::
 
     $ pylava --help
@@ -166,24 +200,19 @@ Command line options
       --abspath, -a         Use absolute paths in output.
 
 
-.. _modeline:
-
 File modelines
---------------
-
-You can set options for **Pylama** inside a source file. Use
+~~~~~~~~~~~~~~
+You can set options for Pylava inside a source file. Use
 pylava *modeline* for this.
 
 Format: ::
 
     # pylava:{name1}={value1}:{name2}={value2}:...
 
-
-::
+Example: ::
 
      .. Somethere in code
      # pylava:ignore=W:select=W301
-
 
 Disable code checking for current file: ::
 
@@ -192,28 +221,25 @@ Disable code checking for current file: ::
 
 Those options have a higher priority.
 
-.. _skiplines:
 
 Skip lines (noqa)
------------------
-
+~~~~~~~~~~~~~~~~~
 Just add `# noqa` in end of line to ignore.
 
-::
+Example:
+
+.. code:: python
 
     def urgent_fuction():
         unused_var = 'No errors here' # noqa
 
 
-.. _config:
-
 Configuration file
-------------------
-
-**Pylama** looks for a configuration file in the current directory.
+~~~~~~~~~~~~~~~~~~
+Pylava looks for a configuration file in the current directory.
 
 The program searches for the first matching ini-style configuration file in
-the directories of command line argument. Pylama looks for the configuration
+the directories of command line argument. Pylava looks for the configuration
 in this order: ::
 
     pylava.ini
@@ -221,13 +247,14 @@ in this order: ::
     tox.ini
     pytest.ini
 
-The "--option" / "-o" argument can be used to specify a configuration file.
+The ``--option`` / ``-o`` argument can be used to specify a
+configuration file.
 
-Pylama searches for sections whose names start with `pylava`.
+Pylava searches for sections whose names start with `pylava`.
 
-The "pylava" section configures global options like `linters` and `skip`.
+The `pylava` section configures global options like `linters` and `skip`.
 
-::
+Example: ::
 
     [pylava]
     format = pylint
@@ -235,12 +262,12 @@ The "pylava" section configures global options like `linters` and `skip`.
     linters = pylint,mccabe
     ignore = F0401,C0111,E731
 
-Set Code-checkers' options
---------------------------
 
+Set Code-checkers' options
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 You could set options for special code checker with pylava configurations.
 
-::
+Example: ::
 
     [pylava:pyflakes]
     builtins = _
@@ -256,14 +283,13 @@ See code-checkers' documentation for more info.
 
 
 Set options for file (group of files)
--------------------------------------
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 You could set options for special file (group of files)
 with sections:
 
 The options have a higher priority than in the `pylava` section.
 
-::
+Example: ::
 
     [pylava:*/pylava/main.py]
     ignore = C901,R0914,W0212
@@ -277,26 +303,30 @@ The options have a higher priority than in the `pylava` section.
 
 
 Pytest integration
-==================
+------------------
+Pylava has Pytest_ support. The package automatically registers itself
+as a pytest plugin during installation. Pylava also supports
+`pytest_cache` plugin.
 
-Pylama has Pytest_ support. The package automatically registers itself as a pytest
-plugin during installation. Pylama also supports `pytest_cache` plugin.
-
-Check files with pylava ::
+Check files with pylava: ::
 
     pytest --pylava ...
 
 Recommended way to set pylava options when using pytest — configuration
 files (see below).
 
+.. _Pytest: http://pytest.org
 
 Writing a linter
-================
+----------------
+You can write a custom extension for Pylava. Custom linter should be a
+python module. Name should be like ``pylava_<name>``.
 
-You can write a custom extension for Pylama.
-Custom linter should be a python module. Name should be like 'pylava_<name>'.
+In ``setup.py``, ``pylava.linter`` entry point should be defined.
 
-In 'setup.py', 'pylava.linter' entry point should be defined. ::
+Example:
+
+.. code:: python
 
     setup(
         # ...
@@ -306,18 +336,19 @@ In 'setup.py', 'pylava.linter' entry point should be defined. ::
         # ...
     )
 
-'Linter' should be instance of 'pylava.lint.Linter' class.
-Must implement two methods:
+``Linter`` should be instance of ``pylava.lint.Linter`` class. Must
+implement two methods:
 
-'allow' takes a path and returns true if linter can check this file for errors.
-'run' takes a path and meta keywords params and returns a list of errors.
+- ``allow`` takes a path and returns true if linter can check this file for errors.
+- ``run`` takes a path and meta keywords params and returns a list of errors.
 
-Example:
---------
-
+Example
+~~~~~~~
 Just a virtual 'WOW' checker.
 
-setup.py: ::
+setup.py:
+
+.. code:: python
 
     setup(
         name='pylava_wow',
@@ -328,7 +359,9 @@ setup.py: ::
         # ...
     )
 
-pylava_wow.py: ::
+pylava_wow.py:
+
+.. code:: python
 
     from pylava.lint import Linter as BaseLinter
 
@@ -350,7 +383,7 @@ pylava_wow.py: ::
 
 Run pylava from python code
 ---------------------------
-::
+.. code:: python
 
     from pylava.main import check_path, parse_options
 
@@ -360,46 +393,34 @@ Run pylava from python code
     errors = check_path(options)
 
 
-.. _bagtracker:
 
-Bug tracker
------------
+Support
+-------
+To report bugs, suggest improvements, or ask questions, please create a
+new issue at http://github.com/pyfocus/pylava/issues.
 
-If you have any suggestions, bug reports or annoyances please report them to the issue tracker at https://github.com/pyfocus/pylava/issues
-
-
-.. _contributing:
 
 Contributing
 ------------
+Development of `pylava` happens at the ``master`` branch of
+https://github.com/pyfocus/pylava.
 
-Development of `pylava` happens at GitHub: https://github.com/pyfocus/pylava (master branch)
-
-
-.. _contributors:
 
 Contributors
-^^^^^^^^^^^^
-
+------------
 See AUTHORS_.
 
+.. _AUTHORS: https://github.com/pyfocus/pylava/blob/master/AUTHORS
 
-.. _license:
 
 License
 -------
-Licensed under the `MIT License`_.
+This is free software. You are permitted to use, copy, modify, merge,
+publish, distribute, sublicense, and/or sell copies of it, under the
+terms of the MIT License. See LICENSE.rst_ for the complete license.
 
+This software is provided WITHOUT ANY WARRANTY; without even the implied
+warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
+LICENSE.rst_ for the complete disclaimer.
 
-.. _links:
-
-.. _AUTHORS: https://github.com/pyfocus/pylava/blob/develop/AUTHORS
-.. _MIT license: https://github.com/pyfocus/pylava/blob/master/LICENSE.rst
-.. _Mccabe: http://nedbatchelder.com/blog/200803/python_code_complexity_microtool.html
-.. _pydocstyle: https://github.com/PyCQA/pydocstyle/
-.. _pycodestyle: https://github.com/PyCQA/pycodestyle
-.. _PyFlakes: https://github.com/pyflakes/pyflakes
-.. _Pylint: http://pylint.org
-.. _Pytest: http://pytest.org
-.. _gjslint: https://developers.google.com/closure/utilities
-.. _Radon: https://github.com/rubik/radon
+.. _LICENSE.rst: https://github.com/pyfocus/pylava/blob/master/LICENSE.rst
