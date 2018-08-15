@@ -38,7 +38,7 @@ meta = dict(
 
     entry_points={
         'console_scripts': [
-            'pyfocus = pylava.main:shell',
+            'pylava = pylava.main:shell',
         ],
         'pytest11': ['pylava = pylava.pytest'],
     },
