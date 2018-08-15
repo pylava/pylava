@@ -1,4 +1,4 @@
-"""Pylama's core functionality.
+"""Pylava's core functionality.
 
 Prepare params, check a modeline and run the checkers.
 """
@@ -74,7 +74,7 @@ def run(path='', code=None, rootdir=CURDIR, options=None):
     except SyntaxError as e:
         LOGGER.debug("SyntaxError %s", e)
         errors.append(
-            Error(linter='pylama', lnum=e.lineno, col=e.offset,
+            Error(linter='pylava', lnum=e.lineno, col=e.offset,
                   text='E0100 SyntaxError: {}'.format(e.args[0]),
                   filename=path))
 
@@ -204,4 +204,4 @@ class CodeContext(object):
         if t and LOGGER.level == logging.DEBUG:
             LOGGER.debug(traceback)
 
-# pylama:ignore=R0912,D210,F0001
+# pylava:ignore=R0912,D210,F0001

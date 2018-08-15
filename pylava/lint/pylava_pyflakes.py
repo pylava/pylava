@@ -2,7 +2,7 @@
 
 from pyflakes import checker
 
-from pylama.lint import Linter as Abstract
+from pylava.lint import Linter as Abstract
 
 
 checker.messages.UnusedImport.message = "W0611 %r imported but unused"
@@ -48,4 +48,4 @@ class Linter(Abstract):
             'type': m.message[0]
         } for m in w.messages]
 
-#  pylama:ignore=E501,C0301
+#  pylava:ignore=E501,C0301

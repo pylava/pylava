@@ -110,4 +110,4 @@ class Error(object):
     def __repr__(self):
         return "<Error: %s %s>" % (self.number, self.linter)
 
-# pylama:ignore=W0622,D,R0924
+# pylava:ignore=W0622,D,R0924

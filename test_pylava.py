@@ -1,12 +1,12 @@
 import os.path as op
 
-from pylama.async_mode import check_async
-from pylama.config import parse_options, get_config
-from pylama.core import filter_errors, parse_modeline, prepare_params, run
-from pylama.errors import Error, remove_duplicates
-from pylama.hook import git_hook, hg_hook
-from pylama.lint.extensions import LINTERS
-from pylama.main import shell, check_path
+from pylava.async_mode import check_async
+from pylava.config import parse_options, get_config
+from pylava.core import filter_errors, parse_modeline, prepare_params, run
+from pylava.errors import Error, remove_duplicates
+from pylava.hook import git_hook, hg_hook
+from pylava.lint.extensions import LINTERS
+from pylava.main import shell, check_path
 
 
 def test_filter_errors():
@@ -23,7 +23,7 @@ def test_remove_duplicates():
 def test_parser_modeline():
     code = """
         bla bla bla
-        # pylama: ignore=W12,E14:select=R:skip=0
+        # pylava: ignore=W12,E14:select=R:skip=0
     """
     params = parse_modeline(code)
     assert params == dict(ignore='W12,E14', select='R', skip='0')
@@ -150,7 +150,7 @@ def test_config():
     assert options
     assert options.skip
     assert not options.verbose
-    assert options.paths == ['pylama']
+    assert options.paths == ['pylava']
 
     options = parse_options(['-l', 'pydocstyle,pycodestyle', '-i', 'E'])
     linters, _ = zip(*options.linters)

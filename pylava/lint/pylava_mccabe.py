@@ -1,7 +1,7 @@
 """Code complexity checking."""
 from mccabe import McCabeChecker
 
-from pylama.lint import Linter as Abstract
+from pylava.lint import Linter as Abstract
 import ast
 
 
@@ -23,4 +23,4 @@ class Linter(Abstract):
             for lineno, offset, text, _ in McCabeChecker(tree, path).run()
         ]
 
-#  pylama:ignore=W0212
+#  pylava:ignore=W0212

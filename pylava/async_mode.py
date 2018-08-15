@@ -20,7 +20,7 @@ except (ImportError, NotImplementedError):
 from .core import run
 
 
-LOGGER = logging.getLogger('pylama')
+LOGGER = logging.getLogger('pylava')
 
 
 class Worker(threading.Thread):
@@ -72,4 +72,4 @@ def check_async(paths, options, rootdir=None):
     return errors
 
 
-# pylama:ignore=W0212,D210,F0001
+# pylava:ignore=W0212,D210,F0001

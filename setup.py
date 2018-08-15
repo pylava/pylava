@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-"""Setup pylama installation."""
+"""Setup pylava installation."""
 
 import re
 import sys
@@ -12,7 +12,7 @@ from setuptools import setup, find_packages
 _read = lambda f: open(
     op.join(op.dirname(__file__), f)).read() if op.exists(f) else ''
 
-_meta = _read('pylama/__init__.py')
+_meta = _read('pylava/__init__.py')
 _license = re.search(r'^__license__\s*=\s*"(.*)"', _meta, re.M).group(1)
 _project = re.search(r'^__project__\s*=\s*"(.*)"', _meta, re.M).group(1)
 _version = re.search(r'^__version__\s*=\s*"(.*)"', _meta, re.M).group(1)
@@ -31,17 +31,16 @@ meta = dict(
     zip_safe=False,
     keywords='pylint pep8 pycodestyle pyflakes mccabe linter qa pep257 pydocstyle'.split(),
 
-    author='Kirill Klenov',
-    author_email='horneds@gmail.com',
-    url=' https://github.com/klen/pylama',
+    author='Pyfocus community',
+    url=' https://github.com/pyfocus/pylava',
 
     packages=find_packages(exclude=['plugins']),
 
     entry_points={
         'console_scripts': [
-            'pylama = pylama.main:shell',
+            'pyfocus = pylava.main:shell',
         ],
-        'pytest11': ['pylama = pylama.pytest'],
+        'pytest11': ['pylava = pylava.pytest'],
     },
 
     classifiers=[

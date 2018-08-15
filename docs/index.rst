@@ -1,11 +1,11 @@
 :orphan:
 
-Welcome to Pylama
+Welcome to Pylava
 =================
 
 .. image:: _static/logo.png
 
-Welcome to Pylama's documentation.
+Welcome to Pylava's documentation.
 
 .. === description ===
 .. include:: ../README.rst

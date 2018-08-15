@@ -5,6 +5,6 @@
 """
 
 __version__ = "7.4.3"
-__project__ = "pylama"
-__author__ = "Kirill Klenov <horneds@gmail.com>"
+__project__ = "pylava"
+__author__ = "Pyfocus community"
 __license__ = "GNU LGPL"

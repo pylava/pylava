@@ -402,4 +402,4 @@ class InterpolationNamespace(Namespace):
 
     section_type = InterpolationSection
 
-# pylama:ignore=D,W02,E731,W0621
+# pylava:ignore=D,W02,E731,W0621

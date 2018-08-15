@@ -28,7 +28,7 @@ def run(command):
 
 
 def git_hook(error=True):
-    """Run pylama after git commit."""
+    """Run pylava after git commit."""
     _, files_modified, _ = run("git diff-index --cached --name-only HEAD")
 
     options = parse_options()
@@ -43,7 +43,7 @@ def git_hook(error=True):
 
 
 def hg_hook(ui, repo, node=None, **kwargs):
-    """Run pylama after mercurial commit."""
+    """Run pylava after mercurial commit."""
     seen = set()
     paths = []
     if len(repo):
@@ -67,7 +67,7 @@ def install_git(path):
     with open(hook, 'w') as fd:
         fd.write("""#!/usr/bin/env python
 import sys
-from pylama.hook import git_hook
+from pylava.hook import git_hook
 
 if __name__ == '__main__':
     sys.exit(git_hook())
@@ -87,10 +87,10 @@ def install_hg(path):
         c.add_section('hooks')
 
     if not c.has_option('hooks', 'commit'):
-        c.set('hooks', 'commit', 'python:pylama.hooks.hg_hook')
+        c.set('hooks', 'commit', 'python:pylava.hooks.hg_hook')
 
     if not c.has_option('hooks', 'qrefresh'):
-        c.set('hooks', 'qrefresh', 'python:pylama.hooks.hg_hook')
+        c.set('hooks', 'qrefresh', 'python:pylava.hooks.hg_hook')
 
     c.write(open(hook, 'w+'))
 
@@ -111,4 +111,4 @@ def install_hook(path):
         LOGGER.error('VCS has not found. Check your path.')
         sys.exit(1)
 
-# pylama:ignore=F0401,E1103,D210,F0001
+# pylava:ignore=F0401,E1103,D210,F0001

@@ -15,16 +15,16 @@ from .lint.extensions import LINTERS
 DEFAULT_LINTERS = 'pycodestyle', 'pyflakes', 'mccabe'
 
 CURDIR = os.getcwd()
-CONFIG_FILES = 'pylama.ini', 'setup.cfg', 'tox.ini', 'pytest.ini'
+CONFIG_FILES = 'pylava.ini', 'setup.cfg', 'tox.ini', 'pytest.ini'
 
 #: The skip pattern
 SKIP_PATTERN = re.compile(r'# *noqa\b', re.I).search
 
 # Parse a modelines
-MODELINE_RE = re.compile(r'^\s*#\s+(?:pylama:)\s*((?:[\w_]*=[^:\n\s]+:?)+)', re.I | re.M)
+MODELINE_RE = re.compile(r'^\s*#\s+(?:pylava:)\s*((?:[\w_]*=[^:\n\s]+:?)+)', re.I | re.M)
 
 # Setup a logger
-LOGGER = logging.getLogger('pylama')
+LOGGER = logging.getLogger('pylava')
 LOGGER.propagate = False
 STREAM = logging.StreamHandler(sys.stdout)
 LOGGER.addHandler(STREAM)
@@ -180,7 +180,7 @@ def parse_options(args=None, config=True, rootdir=CURDIR, **overrides): # noqa
         # Parse file related options
         for name, opts in cfg.sections.items():
 
-            if not name.startswith('pylama') or name == cfg.default_section:
+            if not name.startswith('pylava') or name == cfg.default_section:
                 continue
 
             name = name[7:]
@@ -242,7 +242,7 @@ def get_config(ini_path=None, rootdir=None):
 
     """
     config = Namespace()
-    config.default_section = 'pylama'
+    config.default_section = 'pylava'
 
     if not ini_path or ini_path == 'None':
         path = get_default_config_file(rootdir)
@@ -264,4 +264,4 @@ def setup_logger(options):
     if options.options:
         LOGGER.info('Try to read configuration from: ' + options.options)
 
-# pylama:ignore=W0212,D210,F0001
+# pylava:ignore=W0212,D210,F0001

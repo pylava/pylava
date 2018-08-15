@@ -1,4 +1,4 @@
-MODULE=pylama
+MODULE=pylava
 SPHINXBUILD=sphinx-build
 ALLSPHINXOPTS= -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
 BUILDDIR=_build
@@ -29,8 +29,6 @@ release:
 	@pip install bumpversion
 	@bumpversion $(VERSION)
 	@git checkout master
-	@git merge develop
-	@git checkout develop
 	@git push --all
 	@git push --tags
 
@@ -66,12 +64,12 @@ upload: clean
 
 .PHONY: t
 t test:
-	@py.test --pylama pylama
-	@py.test -sx test_pylama.py
+	@py.test --pylava pylava
+	@py.test -sx test_pylava.py
 
 .PHONY: audit
 audit:
-	@python -m "pylama.main"
+	@python -m "pylava.main"
 
 .PHONY: docs
 docs: docs

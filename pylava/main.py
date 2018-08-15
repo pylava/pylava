@@ -1,4 +1,4 @@
-"""Pylama's shell support."""
+"""Pylava's shell support."""
 
 from __future__ import absolute_import, with_statement
 
@@ -14,7 +14,7 @@ def check_path(options, rootdir=None, candidates=None, code=None):
     """Check path.
 
     :param rootdir: Root directory (for making relative file paths)
-    :param options: Parsed pylama options (from pylama.config.parse_options)
+    :param options: Parsed pylava options (from pylava.config.parse_options)
 
     :returns: (list) Errors list
 
@@ -102,4 +102,4 @@ def process_paths(options, candidates=None, error=True):
 if __name__ == '__main__':
     shell()
 
-# pylama:ignore=F0001
+# pylava:ignore=F0001
