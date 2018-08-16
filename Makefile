@@ -76,5 +76,5 @@ audit:
 	@python -m "pylava.main"
 
 .PHONY: docs
-docs: docs
-	@python setup.py build_sphinx --source-dir=docs/ --build-dir=docs/_build --all-files
+docs:
+	@cd docs && sphinx-build -b html . _build/html

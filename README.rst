@@ -39,7 +39,7 @@ these tools:
 .. _gjslint: https://developers.google.com/closure/utilities
 
 
-.. _contents:
+.. contents::
 
 
 Credits
@@ -402,7 +402,7 @@ new issue at http://github.com/pyfocus/pylava/issues.
 
 Contributing
 ------------
-Development of `pylava` happens at the ``master`` branch of
+Development of Pylava happens at the ``master`` branch of
 https://github.com/pyfocus/pylava.
 
 
@@ -410,7 +410,7 @@ Contributors
 ------------
 See AUTHORS_.
 
-.. _AUTHORS: https://github.com/pyfocus/pylava/blob/master/AUTHORS
+.. _AUTHORS: https://github.com/pyfocus/pylava/blob/master/AUTHORS.rst
 
 
 License
