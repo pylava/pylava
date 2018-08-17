@@ -1,7 +1,7 @@
 Pylava
 ======
-Pylava is intended to be a community maintained fork of
-`Pylama <https://github.com/klen/pylama>`_.
+Pylava is a community maintained fork of `Pylama
+<https://github.com/klen/pylama>`_.
 
 .. image:: https://travis-ci.com/pyfocus/pylava.svg?branch=master
     :target: https://travis-ci.com/pyfocus/pylava
@@ -49,7 +49,8 @@ Thanks to:
 - `Kirill Klenvo <https://github.com/klen>`_ for creating and
   maintaining the original Pylama project. This fork named Pylava is a
   derivative work based on Kirill Klenvo's Pylama project.
-- Contributors who have sent pull requests to Pylama.
+- Contributors to Pylama.
+- Contributors to Pylava.
 
 
 New in Pylava
@@ -70,15 +71,15 @@ following areas:
 
     Licensed under a `BSD license`_.
 
-  However there are references to other GNU Lesser General Public
-  License (GNU LGPL) in the project that have not been removed. For more
-  about this issue, see `Pylama issue #64
-  <https://github.com/klen/pylama/issues/64>`_.
+  It is unclear which BSD license (BSD-3-Clause or BSD-2-Clause) is
+  meant here. Moreover there are references to the GNU Lesser General
+  Public License (GNU LGPL) also in the project. See `Pylama issue #64
+  <https://github.com/klen/pylama/issues/64>`_ for more about this.
 
   This fork interprets the license section of the README to mean that
   the Pylama project is available under a BSD license in addition to
   certain files being available under GNU LGPL due to the mentions of
-  GNU LGPL in such files that have not been removed.
+  GNU LGPL in such files.
 
   Further, this fork named Pylava (a derivative work based on Pylama) is
   distributed under the terms of the MIT license which is allowed by BSD
@@ -387,8 +388,9 @@ Run pylava from python code
 
     from pylava.main import check_path, parse_options
 
-    # Use and/or modify 0 or more of the options defined as keys in the variable my_redefined_options below.
-    # To use defaults for any option, remove that key completely.
+    # Use and/or modify 0 or more of the options defined as keys in the
+    # variable my_redefined_options below. To use defaults for any
+    # option, remove that key completely.
     my_redefined_options = {
         'linters': ['pep257', 'pydocstyle', 'pycodestyle', 'pyflakes' ...],
         'ignore': ['D203', 'D213', 'D406', 'D407', 'D413' ...],
@@ -437,3 +439,9 @@ warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
 LICENSE.rst_ for the complete disclaimer.
 
 .. _LICENSE.rst: https://github.com/pyfocus/pylava/blob/master/LICENSE.rst
+
+The original README from Pylama that made Pylama available under a BSD
+license and the original LICENSE file with the GNU LGPL license text are
+archived in the `pylama-archive
+<https://github.com/pyfocus/pylava/tree/master/pylama-archive>`_
+directory.
