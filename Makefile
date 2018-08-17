@@ -59,6 +59,18 @@ test-upload: clean
 #  Development
 # =============
 
+.PHONY: venv
+venv:
+	python3 -m venv ~/.venv/pylava
+	echo . ~/.venv/pylava/bin/activate > venv
+	. ./venv && pip install -r requirements.txt
+	. ./venv && pip install -r requirements-test.txt
+	@echo
+	@echo "To activate virtual environment, enter this command:"
+	@echo
+	@echo "    . venv"
+	@echo
+
 .PHONY: t
 t test:
 	@py.test --pylava pylava
