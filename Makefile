@@ -1,10 +1,3 @@
-MODULE=pylava
-SPHINXBUILD=sphinx-build
-ALLSPHINXOPTS= -d $(BUILDDIR)/doctrees $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) .
-BUILDDIR=_build
-
-LIBSDIR=$(CURDIR)/libs
-
 .PHONY: help
 # target: help - Display callable targets
 help:
@@ -24,7 +17,6 @@ clean:
 # ==============
 
 .PHONY: release
-VERSION?=minor
 # target: release - Bump version
 release:
 	@pip install bumpversion
@@ -33,8 +25,13 @@ release:
 	@git push
 	@git push --tags
 
+.PHONY: major
+major:
+	make release VERSION=major
+
 .PHONY: minor
-minor: release
+minor:
+	make release VERSION=minor
 
 .PHONY: patch
 patch:
@@ -44,19 +41,15 @@ patch:
 #  Build package
 # ===============
 
-.PHONY: register
-# target: register - Register module on PyPi
-register:
-	python setup.py register
-
 .PHONY: upload
-# target: upload - Upload module on PyPi
+# target: upload - Upload module on PyPI
 upload: clean
 	@pip install twine wheel
 	@python setup.py sdist bdist_wheel
 	@twine upload dist/* || true
 
 .PHONY: test-upload
+# target: test-upload - Upload module on Test PyPI
 test-upload: clean
 	@pip install twine wheel
 	@python setup.py sdist bdist_wheel
