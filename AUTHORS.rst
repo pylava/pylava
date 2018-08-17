@@ -1,5 +1,6 @@
-Pylava Maintainer
-=================
+Pylava Maintainers
+==================
+* Michael Käufl (https://github.com/michael-k)
 * Susam Pal (https://github.com/susam)
 
 
@@ -7,6 +8,13 @@ Pylava Contributors
 ===================
 * Max Nordlund (https://github.com/maxnordlund)
 * Michael Käufl (https://github.com/michael-k)
+* Susam Pal (https://github.com/susam)
+* s-nirali (https://github.com/s-nirali)
+
+
+Pylava Release Operator
+=======================
+* Susam Pal (https://github.com/susam)
 
 
 Pylama Maintainer
@@ -31,3 +39,6 @@ Pylama Contributors
 * Serg Baburin (https://github.com/gmist)
 * Tomasz Karbownicki (https://github.com/trojkat)
 * lukaszpiotr (https://github.com/lukaszpiotr)
+
+
+Note: The entries in each section are sorted in alphabetical order.
