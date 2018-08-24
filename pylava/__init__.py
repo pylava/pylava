@@ -4,7 +4,7 @@
 :license: MIT, see LICENSE.rst for more details.
 """
 
-__version__ = "0.1.2"
+__version__ = "0.2.0"
 __project__ = "pylava"
 __author__ = "Pyfocus community"
 __license__ = "MIT"
