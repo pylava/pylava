@@ -46,9 +46,9 @@ Credits
 -------
 Thanks to:
 
-- `Kirill Klenvo <https://github.com/klen>`_ for creating and
+- `Kirill Klenov <https://github.com/klen>`_ for creating and
   maintaining the original Pylama project. This fork named Pylava is a
-  derivative work based on Kirill Klenvo's Pylama project.
+  derivative work based on Kirill Klenov's Pylama project.
 - Contributors to Pylama.
 - Contributors to Pylava.
 
