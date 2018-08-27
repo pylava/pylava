@@ -2,6 +2,13 @@
 ChangeLog
 *********
 
+0.2.1 (2018-08-27)
+==================
+Fixed
+-----
+- Change logging level of linter errors to ERROR.
+
+
 0.2.0 (2018-08-24)
 ==================
 Changed
