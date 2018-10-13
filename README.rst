@@ -377,7 +377,7 @@ pylava_wow.py:
                     return [{
                         lnum: 0,
                         col: 0,
-                        text: 'Wow has been finded.',
+                        text: 'Wow has been found.',
                         type: 'WOW'
                     }]
 
