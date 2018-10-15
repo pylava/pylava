@@ -3,12 +3,12 @@ Pylava
 Pylava is a community maintained fork of `Pylama
 <https://github.com/klen/pylama>`_.
 
-.. image:: https://travis-ci.com/pyfocus/pylava.svg?branch=master
-    :target: https://travis-ci.com/pyfocus/pylava
+.. image:: https://travis-ci.com/pylava/pylava.svg?branch=master
+    :target: https://travis-ci.com/pylava/pylava
     :alt: Build Status
 
-.. image:: https://coveralls.io/repos/github/pyfocus/pylava/badge.svg?branch=master
-    :target: https://coveralls.io/github/pyfocus/pylava?branch=master
+.. image:: https://coveralls.io/repos/github/pylava/pylava/badge.svg?branch=master
+    :target: https://coveralls.io/github/pylava/pylava?branch=master
     :alt: Coveralls
 
 .. image:: https://img.shields.io/pypi/v/pylava.svg
@@ -412,20 +412,20 @@ Run pylava from python code
 Support
 -------
 To report bugs, suggest improvements, or ask questions, please create a
-new issue at http://github.com/pyfocus/pylava/issues.
+new issue at http://github.com/pylava/pylava/issues.
 
 
 Contributing
 ------------
 Development of Pylava happens at the ``master`` branch of
-https://github.com/pyfocus/pylava.
+https://github.com/pylava/pylava.
 
 
 Contributors
 ------------
 See AUTHORS_.
 
-.. _AUTHORS: https://github.com/pyfocus/pylava/blob/master/AUTHORS.rst
+.. _AUTHORS: https://github.com/pylava/pylava/blob/master/AUTHORS.rst
 
 
 License
@@ -438,10 +438,10 @@ This software is provided WITHOUT ANY WARRANTY; without even the implied
 warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See
 LICENSE.rst_ for the complete disclaimer.
 
-.. _LICENSE.rst: https://github.com/pyfocus/pylava/blob/master/LICENSE.rst
+.. _LICENSE.rst: https://github.com/pylava/pylava/blob/master/LICENSE.rst
 
 The original README from Pylama that made Pylama available under a BSD
 license and the original LICENSE file with the GNU LGPL license text are
 archived in the `pylama-archive
-<https://github.com/pyfocus/pylava/tree/master/pylama-archive>`_
+<https://github.com/pylava/pylava/tree/master/pylama-archive>`_
 directory.

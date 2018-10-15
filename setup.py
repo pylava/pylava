@@ -32,7 +32,7 @@ meta = dict(
     keywords='pylint pep8 pycodestyle pyflakes mccabe linter qa pep257 pydocstyle'.split(),
     maintainer='Susam Pal',
     maintainer_email='susam@susam.in',
-    url=' https://github.com/pyfocus/pylava',
+    url=' https://github.com/pylava/pylava',
 
     packages=find_packages(exclude=['plugins']),
 
