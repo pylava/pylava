@@ -1,5 +1,6 @@
 Pylava Maintainers
 ==================
+* Max Nordlund (https://github.com/maxnordlund)
 * Michael Käufl (https://github.com/michael-k)
 * Susam Pal (https://github.com/susam)
 
@@ -10,6 +11,7 @@ Pylava Contributors
 * Michael Käufl (https://github.com/michael-k)
 * Susam Pal (https://github.com/susam)
 * s-nirali (https://github.com/s-nirali)
+* Valentine (https://github.com/itsVale)
 
 
 Pylava Release Operator
