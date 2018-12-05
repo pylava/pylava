@@ -139,7 +139,7 @@ Ignore errors ::
 
     $ pylava -i W,E501
 
-Note: You could choose a group of errors ``D``,``E1``, etc., or special
+Note: You could choose a group of errors ``D``, ``E1``, etc., or special
 errors ``C0312``.
 
 Choose code checkers ::
