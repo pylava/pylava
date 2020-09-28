@@ -101,7 +101,7 @@ most welcome.
 
 Requirements
 ------------
-- Python (2.7, 3.4, 3.5, 3.6, or 3.7)
+- Python (2.7, 3.5, 3.6, 3.7, 3.8, or 3.9)
 - To use JavaScript checker (``gjslint``) you need to install
   ``python-gflags`` with ``pip install python-gflags``.
 - If your tests are failing on Win platform you are missing:
