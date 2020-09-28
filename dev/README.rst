@@ -12,6 +12,12 @@ Release Checklist
 
 - Activate virtual environment for project development, if any.
 
+- Enter the following command to run tests: ::
+
+    make venv
+    . venv
+    make test
+
 - Create and upload a new release to PyPI.
 
   If it's a backwards-incompatible update, enter this command: ::
