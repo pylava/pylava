@@ -3,6 +3,16 @@ ChangeLog
 *********
 
 
+0.3.0 (2020-09-28)
+==================
+
+Changed
+-------
+
+- Fix compatibility with pytest 6.1.
+- Drop support for Python 3.4 and add support for Python 3.8 and 3.9.
+
+
 0.2.2 (2018-10-15)
 ==================
 
