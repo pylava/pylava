@@ -1,5 +1,6 @@
 Pylava
 ======
+
 Pylava is a community maintained fork of `Pylama
 <https://github.com/klen/pylama>`_.
 
@@ -44,6 +45,7 @@ these tools:
 
 Credits
 -------
+
 Thanks to:
 
 - `Kirill Klenov <https://github.com/klen>`_ for creating and
@@ -55,6 +57,7 @@ Thanks to:
 
 New in Pylava
 -------------
+
 This fork of Pylama differs from the original Pylama project in the
 following areas:
 
@@ -94,6 +97,7 @@ following areas:
 
 Documentation
 -------------
+
 Documentation is available at https://pylavadocs.readthedocs.io/. Pull
 requests with documentation enhancements and/or fixes are awesome and
 most welcome.
@@ -101,6 +105,7 @@ most welcome.
 
 Requirements
 ------------
+
 - Python (2.7, 3.5, 3.6, 3.7, 3.8, or 3.9)
 - To use JavaScript checker (``gjslint``) you need to install
   ``python-gflags`` with ``pip install python-gflags``.
@@ -112,6 +117,7 @@ Requirements
 
 Installation
 ------------
+
 Enter the following command to install Pylava. ::
 
     $ pip install pylava
@@ -123,6 +129,7 @@ With Python 3, you may need to enter the following command instead. ::
 
 Quick Start
 -----------
+
 Pylava is easy to use and really fun for checking code quality. Just run
 `pylava` and get common output from all pylava plugins (pycodestyle_,
 PyFlakes_ and etc)
@@ -155,8 +162,10 @@ Choose code checkers for JavaScript::
 
 Set Pylava (checkers) options
 -----------------------------
+
 Command line options
 ~~~~~~~~~~~~~~~~~~~~
+
 ::
 
     $ pylava --help
@@ -203,6 +212,7 @@ Command line options
 
 File modelines
 ~~~~~~~~~~~~~~
+
 You can set options for Pylava inside a source file. Use
 pylava *modeline* for this.
 
@@ -225,6 +235,7 @@ Those options have a higher priority.
 
 Skip lines (noqa)
 ~~~~~~~~~~~~~~~~~
+
 Just add `# noqa` in end of line to ignore.
 
 Example:
@@ -237,6 +248,7 @@ Example:
 
 Configuration file
 ~~~~~~~~~~~~~~~~~~
+
 Pylava looks for a configuration file in the current directory.
 
 The program searches for the first matching ini-style configuration file in
@@ -266,6 +278,7 @@ Example: ::
 
 Set Code-checkers' options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You could set options for special code checker with pylava configurations.
 
 Example: ::
@@ -285,6 +298,7 @@ See code-checkers' documentation for more info.
 
 Set options for file (group of files)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 You could set options for special file (group of files)
 with sections:
 
@@ -305,6 +319,7 @@ Example: ::
 
 Pytest integration
 ------------------
+
 Pylava has Pytest_ support. The package automatically registers itself
 as a pytest plugin during installation. Pylava also supports
 `pytest_cache` plugin.
@@ -318,8 +333,10 @@ files (see below).
 
 .. _Pytest: http://pytest.org
 
+
 Writing a linter
 ----------------
+
 You can write a custom extension for Pylava. Custom linter should be a
 python module. Name should be like ``pylava_<name>``.
 
@@ -343,8 +360,10 @@ implement two methods:
 - ``allow`` takes a path and returns true if linter can check this file for errors.
 - ``run`` takes a path and meta keywords params and returns a list of errors.
 
+
 Example
 ~~~~~~~
+
 Just a virtual 'WOW' checker.
 
 setup.py:
@@ -384,6 +403,7 @@ pylava_wow.py:
 
 Run pylava from python code
 ---------------------------
+
 .. code:: python
 
     from pylava.main import check_path, parse_options
@@ -408,21 +428,23 @@ Run pylava from python code
     errors = check_path(options, rootdir='.')
 
 
-
 Support
 -------
+
 To report bugs, suggest improvements, or ask questions, please create a
 new issue at http://github.com/pylava/pylava/issues.
 
 
 Contributing
 ------------
+
 Development of Pylava happens at the ``master`` branch of
 https://github.com/pylava/pylava.
 
 
 Contributors
 ------------
+
 See AUTHORS_.
 
 .. _AUTHORS: https://github.com/pylava/pylava/blob/master/AUTHORS.rst
@@ -430,6 +452,7 @@ See AUTHORS_.
 
 License
 -------
+
 This is free software. You are permitted to use, copy, modify, merge,
 publish, distribute, sublicense, and/or sell copies of it, under the
 terms of the MIT License. See LICENSE.rst_ for the complete license.

@@ -1,11 +1,13 @@
 Developer Notes
 ===============
+
 This document contains notes that may be useful to developers and
 release operators of Pylava.
 
 
 Release Checklist
 -----------------
+
 - Update CHANGES.rst and commit it.
 
 - Activate virtual environment for project development, if any.

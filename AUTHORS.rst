@@ -1,5 +1,6 @@
 Pylava Maintainers
 ==================
+
 * Max Nordlund (https://github.com/maxnordlund)
 * Michael Käufl (https://github.com/michael-k)
 * Susam Pal (https://github.com/susam)
@@ -7,6 +8,7 @@ Pylava Maintainers
 
 Pylava Contributors
 ===================
+
 * Max Nordlund (https://github.com/maxnordlund)
 * Michael Käufl (https://github.com/michael-k)
 * Susam Pal (https://github.com/susam)
@@ -16,16 +18,19 @@ Pylava Contributors
 
 Pylava Release Operator
 =======================
+
 * Susam Pal (https://github.com/susam)
 
 
 Pylama Maintainer
 =================
+
 * Kirill Klenov <horneds@gmail.com>
 
 
 Pylama Contributors
 ===================
+
 * Ankur Dedania (https://github.com/AbsoluteMSTR)
 * Daniel Hahler (https://github.com/blueyed)
 * Daniel O'onnell' (https://github.com/mruwnik)
