@@ -40,6 +40,8 @@ def pytest_sessionfinish(session):
 def pytest_collect_file(path, parent):
     config = parent.config
     if config.option.pylava and path.ext == '.py':
+        if hasattr(PylavaItem, "from_parent"):
+            return PylavaItem.from_parent(parent=parent, path=path, fspath=path)
         return PylavaItem(path, parent)
 
 
@@ -49,7 +51,7 @@ class PylavaError(Exception):
 
 class PylavaItem(pytest.Item, pytest.File):
 
-    def __init__(self, path, parent):
+    def __init__(self, path, parent, fspath=None):
         super(PylavaItem, self).__init__(path, parent)
         self.add_marker("pycodestyle")
         self.cache = None
