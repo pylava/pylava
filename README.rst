@@ -66,7 +66,7 @@ following areas:
   request to resolve the issue, they are not being merged into the
   project due to lack of maintenance. This fork named Pylava is meant
   for merging useful pull requests into the project, so that the project
-  can satsify the current needs of Python developers. This is the
+  can satisfy the current needs of Python developers. This is the
   primary reason why this fork was created.
 
 - The licensing terms of Pylama are unclear. The README of the original
@@ -75,7 +75,7 @@ following areas:
     Licensed under a `BSD license`_.
 
   It is unclear which BSD license (BSD-3-Clause or BSD-2-Clause) is
-  meant here. Moreover there are references to the GNU Lesser General
+  meant here. Moreover, there are references to the GNU Lesser General
   Public License (GNU LGPL) also in the project. See `Pylama issue #64
   <https://github.com/klen/pylama/issues/64>`_ for more about this.
 
@@ -85,7 +85,7 @@ following areas:
   GNU LGPL in such files.
 
   Further, this fork named Pylava (a derivative work based on Pylama) is
-  distributed under the terms of the MIT license which is allowed by BSD
+  distributed under the terms of the MIT license, which is allowed by BSD
   licenses.
 
 - While the original Pylama project uses the ``develop`` branch as the
@@ -107,9 +107,9 @@ Requirements
 ------------
 
 - Python (2.7, 3.5, 3.6, 3.7, 3.8, or 3.9)
-- To use JavaScript checker (``gjslint``) you need to install
+- To use JavaScript checker (``gjslint``), you need to install
   ``python-gflags`` with ``pip install python-gflags``.
-- If your tests are failing on Win platform you are missing:
+- If your tests are failing on  Win platform, you are missing:
   ``curses`` - http://www.lfd.uci.edu/~gohlke/pythonlibs/
   (The curses library supplies a terminal-independent screen-painting
   and keyboard-handling facility for text-based terminals)
@@ -132,7 +132,7 @@ Quick Start
 
 Pylava is easy to use and really fun for checking code quality. Just run
 `pylava` and get common output from all pylava plugins (pycodestyle_,
-PyFlakes_ and etc)
+PyFlakes_, etc.)
 
 Recursively check the current directory. ::
 
@@ -236,7 +236,7 @@ Those options have a higher priority.
 Skip lines (noqa)
 ~~~~~~~~~~~~~~~~~
 
-Just add `# noqa` in end of line to ignore.
+Just add `# noqa` at the end of a line to ignore.
 
 Example:
 
@@ -279,7 +279,7 @@ Example: ::
 Set Code-checkers' options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-You could set options for special code checker with pylava configurations.
+You could set options for a special code checker with pylava configurations.
 
 Example: ::
 
@@ -321,14 +321,14 @@ Pytest integration
 ------------------
 
 Pylava has Pytest_ support. The package automatically registers itself
-as a pytest plugin during installation. Pylava also supports
+as a pytest plugin during installation. Pylava also supports the
 `pytest_cache` plugin.
 
 Check files with pylava: ::
 
     pytest --pylava ...
 
-Recommended way to set pylava options when using pytest — configuration
+The recommended way to set pylava options when using pytest — configuration
 files (see below).
 
 .. _Pytest: http://pytest.org
@@ -354,7 +354,7 @@ Example:
         # ...
     )
 
-``Linter`` should be instance of ``pylava.lint.Linter`` class. Must
+``Linter`` should be an instance of the ``pylava.lint.Linter`` class. Must
 implement two methods:
 
 - ``allow`` takes a path and returns true if linter can check this file for errors.
